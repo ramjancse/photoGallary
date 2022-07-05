@@ -1,0 +1,4 @@
+localhost:3000/galary?title=title
+localhost:3000/galary?_page=1&limit=10
+localhost:3000/galary?title=title&rating=5.3
+localhost:3000/galary?_sort=title&_order=asc
