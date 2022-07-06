@@ -1,5 +1,7 @@
 const showGalleryElem = document.getElementById('showGallery');
-fetch('http://localhost:3000/galary/')
+
+
+    fetch('http://localhost:3000/galary/')
     .then((response) => response.json())
     .then((data) => {
         showGalleryElem.innerHTML = '';
@@ -7,7 +9,7 @@ fetch('http://localhost:3000/galary/')
             let showData  = `
             <div class="col s12 m6 l4 xl3">
             <div class="card">
-                <div class="card-image">
+                <div class="card-image" id="${item.id}" onClick=myFunction(${item.id})>
                     <img src="${item.image}" />
                 </div>
                 <div class="card-content">
@@ -23,11 +25,16 @@ fetch('http://localhost:3000/galary/')
             </div>
             `
             showGalleryElem.insertAdjacentHTML('afterbegin',
-            showData);
-
-            
-
-        });
-        
+                showData);
+        });        
     })
     .catch((error) => console.log(error));
+
+function myFunction(id) {
+    const indvID = document.getElementById(id);
+    const findClass = indvID.querySelector('.imageScale');
+    indvID.classList.toggle('imageScale');
+}
+function next() {
+    
+}

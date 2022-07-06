@@ -1,0 +1,19 @@
+.imageScale {
+  /* transform: scale(1); */
+  transition: all 1s;
+  transform: rotate(360deg);
+  /* opacity: 0.5; */
+}
+.paginationButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.marginX {
+  margin-right: 10px;
+}
+.marginY {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
