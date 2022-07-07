@@ -13,7 +13,7 @@
     <title>Photo Gallery</title>
   </head>
   <body>
-    < class="container-fluide">
+    <div class="container-fluide">
       <nav class="light-blue lighten-1">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo">Logo</a>
@@ -38,12 +38,23 @@
       <div>
         <h1 class="center">Photo Gallery</h1>
       </div>
-      <div class="row" id="showGallery"></div>
+
+      <form class="">
+        <div class="row contWidth">
+          <div class="input-field col s12">
+            <input id="search" type="text" class="validate" name="search" />
+            <label for="search"> Search </label>
+          </div>
+        </div>
+      </form>
+
+      <div class="row contWidth" id="showGallery"></div>
       <div class="paginationButton">
-        <a class="waves-effect waves-light btn marginX marginY" id="prev">Prev</a>
+        <a class="waves-effect waves-light btn marginX marginY" id="prev"
+          >Prev</a
+        >
         <a class="waves-effect waves-light btn" id="next">Next</a>
       </div>
-      
 
       <!-- end card -->
       <footer class="light-blue lighten-1">

@@ -1,8 +1,6 @@
 .imageScale {
-  /* transform: scale(1); */
   transition: all 1s;
   transform: rotate(360deg);
-  /* opacity: 0.5; */
 }
 .paginationButton {
   display: flex;
@@ -16,4 +14,7 @@
 .marginY {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.contWidth {
+  width: 90%;
 }
